@@ -4,8 +4,13 @@
     max-width: 100%;
   }
 }
+
 .language-switcher {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.input-title {
+  width: auto;
 }

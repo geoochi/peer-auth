@@ -40,7 +40,7 @@ const Article: React.FC = () => {
         </a>
       </p>
       <p>
-        <a href='https://github.com/geoochi/PeerAuth' target='_blank'>
+        <a href='https://github.com/geoochi/peer-auth' target='_blank'>
           <span>{t('srccode')}</span>
           <span>↗</span>
         </a>

@@ -15,8 +15,6 @@ const LanguageSwitcher: React.FC<{
           i18n.changeLanguage(e.target.value)
         }}
       >
-        <option value='en'>English</option>
-        <option value='de'>Deutsch</option>
         <option value='zh-CN'>简体中文</option>
       </select>
     </div>

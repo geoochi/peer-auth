@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.css'
 import LanguageSwitcher from './components/language-switcher'
 import i18n from 'i18next'
@@ -34,6 +34,7 @@ const App: React.FC = () => {
           setSelectedLanguage={setSelectedLanguage}
         />
         <Article />
+        <br />
         <QrSection />
       </div>
     </>
