@@ -16,12 +16,12 @@ const QrSection: React.FC = () => {
   )
 
   const generateHandler = async () => {
-    const secret = new OTPAuth.Secret({ size: 20 }).base32
+    const secret = new OTPAuth.Secret({ size: 32 }).base32
     setSecret(secret)
     const totp = new OTPAuth.TOTP({
       issuer: 'PeerAuth',
       label: encodeURIComponent(name),
-      algorithm: 'SHA1',
+      algorithm: 'SHA256',
       digits: 6,
       period: 30,
       secret,
